@@ -79,6 +79,8 @@ function searchAbilities(parent, abilities){
                 (
                     ab['name'].toLowerCase().includes(val) ||
                     ab['description'].toLowerCase().includes(val) ||
+                    ab['technique_name'].toLowerCase().includes(val) ||
+                    ab['technique_id'].toLowerCase().includes(val) ||
                     cmd.toLowerCase().includes(val)
                 ) && !added.includes(ab['ability_id'])
             ){
